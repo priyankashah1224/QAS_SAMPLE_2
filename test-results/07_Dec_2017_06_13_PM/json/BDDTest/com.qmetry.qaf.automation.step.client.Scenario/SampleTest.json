@@ -1,0 +1,174 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "get",
+      "args": [
+        "[http://www.google.co.in]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=http://www.google.co.in}"
+          ],
+          "result": "{}",
+          "subLogs": [],
+          "duration": 765
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "verifyPresent",
+      "args": [
+        "[name=q]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "[id: :wdc:1512650629321]",
+          "subLogs": [],
+          "duration": 39
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "sendKeys",
+      "args": [
+        "[QMetry, name=q]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: :wdc:1512650629321",
+          "subLogs": [],
+          "duration": 19
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\":wdc:1512650629321\",\"value\":[\"QMetry\"]}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 53
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "click",
+      "args": [
+        "[name=btnG]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=btnG, using=name}"
+          ],
+          "result": "id: :wdc:1512650629322",
+          "subLogs": [],
+          "duration": 57
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "By.name: btnG",
+            "{\"id\":\":wdc:1512650629322\"}"
+          ],
+          "result": "clickElement:{}",
+          "subLogs": [],
+          "duration": 1068
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "verifyLinkWithPartialTextPresent",
+      "args": [
+        "[QMetry]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=QMetry, using=partial link text}"
+          ],
+          "result": "[id: :wdc:1512650630902, id: :wdc:1512650630903, id: :wdc:1512650630904, id: :wdc:1512650630905, id: :wdc:1512650630906, id: :wdc:1512650630907, id: :wdc:1512650630908, id: :wdc:1512650630909, id: :wdc:1512650630910, id: :wdc:1512650630911]",
+          "subLogs": [],
+          "duration": 127
+        }
+      ],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given get 'http://www.google.co.in'",
+      "type": "TestStepPass",
+      "duration": 4552,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then verify 'name=q' is present",
+      "type": "TestStepPass",
+      "duration": 267,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "Expected By.name: q present : Actual By.name: q present",
+          "type": "Pass",
+          "screenshot": "test-results/07_Dec_2017_06_13_PM/img/SampleTest_1o9k8ypufmbnw43744.png",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "When sendKeys 'QMetry' into 'name=q'",
+      "type": "TestStepPass",
+      "duration": 79,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And click on 'name=btnG'",
+      "type": "TestStepPass",
+      "duration": 1139,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then verify link with partial text 'QMetry' is present",
+      "type": "TestStepPass",
+      "duration": 504,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "Expected By.partialLinkText: QMetry present : Actual By.partialLinkText: QMetry present",
+          "type": "Pass",
+          "screenshot": "test-results/07_Dec_2017_06_13_PM/img/SampleTest_zuzx1hym564q43745.png",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    }
+  ]
+}
